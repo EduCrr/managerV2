@@ -1,0 +1,28 @@
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+
+  .title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      padding: 10px;
+      border-radius: 5px;
+      outline: 0;
+      border: 0;
+    }
+  }
+
+  .contentType {
+    margin: 1rem 0px;
+    width: 100%;
+  }
+}

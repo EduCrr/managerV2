@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Poppins:wght@400;500;700;800&display=swap");
+html,
+
+/* declaring the css variables colors */
+:root {
+  --color-primary: #17181c;
+  --color-background: #fff;
+  --color-content-primary: #17181c;
+  --color-content-background: #eee;
+  --color-content2-background: #eee;
+  --color-menu-background: #eee;
+  --color-form-background: #f9f9f9;
+  --color-search-background: #f9f9f9;
+  --color-modal-background: white;
+}
+
+[data-theme="dark"] {
+  --color-primary: #fff;
+  --color-background: #17181c;
+  --color-content-background: #17181c;
+  --color-content2-background: linear-gradient(
+    183deg,
+    rgba(33, 34, 38, 1) 0%,
+    rgba(24, 25, 29, 1) 35%,
+    rgba(24, 25, 29, 1) 100%
+  );
+  --color-menu-background: #202125;
+  --color-form-background: #202125;
+  --color-search-background: #17181c;
+  --color-modal-background: #17181c;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #dc9763 #17181c;
+  border-radius: 9999px;
+}
+
+html ::-webkit-scrollbar {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  width: 0.4vw;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background-color: #dc9763;
+  background-clip: padding-box;
+  border-radius: 9999px;
+}
+
+html ::-webkit-scrollbar-track {
+  background-color: var(--color-menu-background);
+}
+.quill {
+  margin: 1rem 0px;
+  width: 100% !important;
+}
+.editor {
+  height: 300px;
+  margin-bottom: 50px;
+}
+.ql-toolbar.ql-snow,
+.ql-container.ql-snow {
+  border: 0px !important;
+}
+.ql-editor {
+  width: 100% !important;
+  color: var(--color-primary);
+}
+.ql-editor .ql-video {
+  height: 250px !important;
+  width: auto !important;
+}
+.ql-snow .ql-tooltip {
+  z-index: 99;
+  position: absolute !important;
+  left: 0% !important;
+}
+.items {
+  border-radius: 15px;
+  background-color: var(--color-content-background);
+  background: var(--color-content2-background);
+}
+.top {
+  background-color: var(--color-menu-background);
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+.left {
+  background-color: var(--color-menu-background);
+  position: fixed;
+  height: 100%;
+  padding: 0px 12px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.linkName {
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--color-menu-background);
+  color: var(--color-primary);
+  margin: 2rem 0px;
+}
+
+input,
+textarea,
+select {
+  background-color: var(--color-form-background);
+  color: var(--color-primary);
+}
+.search {
+  button,
+  input,
+  .react-select
+    .react-select__control--is-focused.react-select__control--menu-is-open {
+    background-color: var(--color-search-background);
+    color: var(--color-primary);
+  }
+}
+
+.btnModeColor {
+  border: 0;
+  outline: 0;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login {
+  text-align: center;
+  background-color: var(--color-modal-background);
+  color: var(--color-primary);
+  width: 500px;
+  height: 500px;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  z-index: 99;
+  flex-direction: column;
+  box-shadow: 0 12px 17px rgb(0 0 0 / 20%);
+  justify-content: space-around;
+}

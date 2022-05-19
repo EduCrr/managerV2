@@ -1,0 +1,38 @@
+.container {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  ul li {
+    list-style: none;
+    margin-bottom: 15px;
+  }
+
+  a {
+    font-size: 22px;
+    position: relative;
+  }
+
+  .link {
+    position: relative;
+    &:hover {
+      color: #dc9763;
+    }
+  }
+  .linkActive a {
+    color: #dc9763;
+
+    &::before {
+      position: absolute;
+      top: 0%;
+      // transform: translate(-50%);
+      left: -25px;
+      content: "";
+      height: 25px;
+      width: 3px;
+      background-color: #dc9763;
+    }
+  }
+}
