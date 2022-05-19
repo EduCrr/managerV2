@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import Manager from "../../styles/Manager.module.scss";
+import Manager from "../../../styles/Manager.module.scss";
 import { FaPowerOff } from "react-icons/fa";
 import Image from "next/image";
 

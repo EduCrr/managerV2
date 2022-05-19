@@ -1,5 +1,5 @@
 import { FaSearch } from "react-icons/fa";
-import Manager from "../../styles/Manager.module.scss";
+import Manager from "../../../styles/Manager.module.scss";
 import styles from "./styles.module.scss";
 
 export const Initial = () => {

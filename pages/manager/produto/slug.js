@@ -1,4 +1,4 @@
-import { Default } from "../../../components/Default";
+import { Default } from "../../../components/Manager/Default";
 import Manager from "../../../styles/Manager.module.scss";
 import styles from "./styles.module.scss";
 import dynamic from "next/dynamic";

@@ -1,10 +1,10 @@
-import { Default } from "../../../components/Default";
+import { Default } from "../../../components/Manager/Default";
 import styles from "./styles.module.scss";
-import Manager from "../../../styles/Manager.module.scss";
+import Manager from "../../../styles//Manager.module.scss";
 import { FaPlus } from "react-icons/fa";
-import { ContentManager } from "../../../components/ContentManager";
-import { ImtemManager } from "../../../components/ItemManager";
-import { Initial } from "../../../components/Initial";
+import { ContentManager } from "../../../components/Manager/ContentManager";
+import { ImtemManager } from "../../../components/Manager/ItemManager";
+import { Initial } from "../../../components/Manager/Initial";
 import Link from "next/link";
 
 const Home = () => {

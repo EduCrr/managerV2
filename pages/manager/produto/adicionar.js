@@ -1,4 +1,4 @@
-import { Default } from "../../../components/Default";
+import { Default } from "../../../components/Manager/Default";
 import Manager from "../../../styles/Manager.module.scss";
 import styles from "./styles.module.scss";
 import dynamic from "next/dynamic";
@@ -45,9 +45,6 @@ const Adicionar = () => {
               <option>teste</option>
               <option>teste</option>
             </select>
-            <div className="editor">
-              <div ref={quillRef} placeholder="Digite seu conteudo" />
-            </div>
             <div className={Manager.container}>
               <input
                 type="file"
@@ -57,16 +54,18 @@ const Adicionar = () => {
                 style={{ display: "none" }}
               />
               <label htmlFor="file">
-                <Image
-                  height={350}
-                  width={450}
-                  alt=""
-                  className={Manager.selected}
-                  src={
-                    imgFile ??
-                    "https://mladezj2cqfh.i.optimole.com/ZcuK1Xg.ECq7~2ccb/w:auto/h:auto/q:auto/https://www.take5.com.br/wp-content/themes/cardinal/images/default-thumb.png"
-                  }
-                />
+                <div className={Manager.labelPhoto}>
+                  <Image
+                    height={350}
+                    width={450}
+                    alt=""
+                    className={Manager.selected}
+                    src={
+                      imgFile ??
+                      "https://mladezj2cqfh.i.optimole.com/ZcuK1Xg.ECq7~2ccb/w:auto/h:auto/q:auto/https://www.take5.com.br/wp-content/themes/cardinal/images/default-thumb.png"
+                    }
+                  />
+                </div>
                 <div className={Manager.middle}>
                   <div htmlFor="file" className={Manager.text}>
                     <FaFileAlt />
@@ -74,6 +73,10 @@ const Adicionar = () => {
                 </div>
               </label>
             </div>
+            <div className="editor">
+              <div ref={quillRef} placeholder="Digite seu conteudo" />
+            </div>
+
             <input className={Manager.submit} type="submit" value="Create" />
           </form>
         </div>
