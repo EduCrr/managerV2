@@ -8,7 +8,7 @@ export default function Home() {
 
   const fadeInUp = {
     initial: {
-      y: 60,
+      y: -90,
       opacity: 0,
     },
     animate: {
@@ -21,7 +21,7 @@ export default function Home() {
       },
     },
     exit: {
-      y: -140,
+      y: 90,
       opacity: 0,
       transition: {
         duration: 0.9,
@@ -47,28 +47,7 @@ export default function Home() {
         <a>
           <div>
             <motion.img
-              animate={{ scale: 1 }}
-              whileHover={{ scale: 1.1 }}
-              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500"
-            />
-          </div>
-        </a>
-      </Link>
-      <Link href="/teste">
-        <a>
-          <div>
-            <motion.img
-              animate={{ scale: 1 }}
-              whileHover={{ scale: 1.1 }}
-              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500"
-            />
-          </div>
-        </a>
-      </Link>{" "}
-      <Link href="/teste">
-        <a>
-          <div>
-            <motion.img
+              layoutId="teta"
               animate={{ scale: 1 }}
               whileHover={{ scale: 1.1 }}
               src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500"
