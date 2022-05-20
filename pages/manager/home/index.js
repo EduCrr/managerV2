@@ -5,19 +5,17 @@ import { FaPlus } from "react-icons/fa";
 import { ContentManager } from "../../../components/Manager/ContentManager";
 import { ImtemManager } from "../../../components/Manager/ItemManager";
 import { Initial } from "../../../components/Manager/Initial";
-import { motion } from "framer-motion";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const easing = [0.6, -0.05, 0.01, 0.99];
 
   const fadeInUp = {
     initial: {
-      y: -60,
       opacity: 0,
     },
     animate: {
-      y: 0,
       opacity: 1,
       transition: {
         duration: 0.5,
@@ -26,7 +24,6 @@ const Home = () => {
       },
     },
     exit: {
-      y: 140,
       opacity: 0,
       transition: {
         duration: 0.9,
@@ -34,6 +31,7 @@ const Home = () => {
       },
     },
   };
+
   return (
     <Default>
       <motion.div
@@ -41,7 +39,6 @@ const Home = () => {
         initial="initial"
         animate="animate"
         exit="exit"
-        style={{ display: "block" }}
       >
         <Initial />
         <div className="items">
